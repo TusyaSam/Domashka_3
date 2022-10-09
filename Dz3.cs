@@ -99,10 +99,26 @@
 // Напишите программу, которая по заданному номеру четверти,
 // показывает диапазон возможных координат точек в этой четверти (х и у)
 
+Console.Clear();
+Console.Write("Введите номер четверти от 1 до 4: ");
+int x = Convert.ToInt32(Console.ReadLine());
 
+string [] diapaz = {"x>0, y>0","x<0, y>0", "x<0, y<0", "x>0, y<0"};
+int [] index = {1,2,3,4};
+if (x==index [0]) Console.WriteLine (diapaz[0]);
+else if (x==index [1]) Console.WriteLine (diapaz[1]);
+else if (x==index [2]) Console.WriteLine (diapaz[2]);
+else if (x==index [3]) Console.WriteLine (diapaz[3]);
+else
+Console.WriteLine("Неверное число, только от 1 до 4");
 
-
-
+// ИЛИ
+// if (x==1) Console.WriteLine("Диапазон координат Х>0 и У>0");
+// else if (x==2) Console.WriteLine("Диапазон координат Х<0 и У>0");
+// else if (x==3) Console.WriteLine("Диапазон координат Х<0 и У<0");
+// else if (x==4) Console.WriteLine("Диапазон координат Х>0 и У<0");
+// else
+// Console.WriteLine("Неверное число, только от 1 до 4");
 
 // Задача 21
 // Напишите программу, которая принимает на вход координаты двух точек
@@ -135,10 +151,19 @@
 // 5-> 1,4,9,16,25
 // 2-> 1,4
 
-Console.Clear();
-Console.Write ("Введите число N=");
-int N = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.Write ("Введите число N=");
+// int N = Convert.ToInt32(Console.ReadLine());
 
-for (int i=0; i<N; i++, Console.WriteLine ($"{i*i}"))
-{
-}
+// for (int i=0; i<N; i++, Console.WriteLine ($"{i*i}"))
+// {
+// }
+
+
+//ИЛИ
+// int i=1;
+// while (i<=N)
+// {
+//      Console.Write($" {i*i} ,");
+//      i++;
+// }
