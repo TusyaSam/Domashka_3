@@ -31,23 +31,23 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-Console.Clear();
-Console.Write("Введите координаты точки A: x=");
-int ax = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координаты точки A: y=");
-int ay = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координаты точки A: z=");
-int az = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координаты точки B: x=");
-int bx = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координаты точки B: y=");
-int by = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координаты точки B: z=");
-int bz = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.Write("Введите координаты точки A: x=");
+// int ax = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координаты точки A: y=");
+// int ay = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координаты точки A: z=");
+// int az = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координаты точки B: x=");
+// int bx = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координаты точки B: y=");
+// int by = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координаты точки B: z=");
+// int bz = Convert.ToInt32(Console.ReadLine());
 
-double otrezok = Math.Round (Math.Sqrt(((bx-ax)*(bx-ax))+((by-ay)*(by-ay))+((bz-az)*(bz-az))));
+// double otrezok = Math.Round (Math.Sqrt(((bx-ax)*(bx-ax))+((by-ay)*(by-ay))+((bz-az)*(bz-az))));
 
-Console.WriteLine($"Расстояние между точками равно: {otrezok}");
+// Console.WriteLine($"Расстояние между точками равно: {otrezok}");
 
 
 
@@ -56,6 +56,14 @@ Console.WriteLine($"Расстояние между точками равно: {
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
+
+Console.Clear();
+Console.Write ("Введите число N=");
+int N = Convert.ToInt32(Console.ReadLine());
+
+for (int i=0; i<N; i++, Console.WriteLine ($"{i*i*i}"))
+{
+}
 
 
 
@@ -88,9 +96,13 @@ Console.WriteLine($"Расстояние между точками равно: {
 // else
 // Console.WriteLine("Какое-то из чисел = 0, замените координаты");
 
+
 // Задача 18
 // Напишите программу, которая по заданному номеру четверти,
 // показывает диапазон возможных координат точек в этой четверти (х и у)
+
+
+
 
 
 
@@ -99,6 +111,23 @@ Console.WriteLine($"Расстояние между точками равно: {
 // и находит расстояние между ними в 2Д пространстве
 // А (3,6); В (2,1)->5,09
 // А (7,-5); В (1,-1)-> 7,21
+
+// Console.Clear();
+// Console.Write("Введите координаты точки A: x=");
+// int ax = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координаты точки A: y=");
+// int ay = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите координаты точки B: x=");
+// int bx = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координаты точки B: y=");
+// int by = Convert.ToInt32(Console.ReadLine());
+
+
+// double otrezok = Math.Round (Math.Sqrt(((bx-ax)*(bx-ax))+((by-ay)*(by-ay))));
+
+// Console.WriteLine($"Расстояние между точками равно: {otrezok}");
+
 
 
 
