@@ -8,23 +8,20 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.Clear();
-Console.WriteLine("Введите пятизначное число x:");
-int x = Convert.ToInt32(Console.ReadLine());
-string Xstr = x.ToString(); 
+// Console.Clear();
+// Console.WriteLine("Введите пятизначное число x:");
+// int x = Convert.ToInt32(Console.ReadLine());
+// string Xstr = x.ToString(); 
 
-if (x>9999 && x<100000)
-{
-     if (Xstr[0]==Xstr[4] && Xstr[1]==Xstr[3])
-     Console.WriteLine($"Введенное число x={x} палиндром");
-     else 
-     Console.WriteLine($"Введенное число x={x} не палиндром");
-}
-else 
- Console.WriteLine($"Число x={x} не пятизначное, введите корректное");
-
-
-
+// if (x>9999 && x<100000)
+// {
+//      if (Xstr[0]==Xstr[4] && Xstr[1]==Xstr[3])
+//      Console.WriteLine($"Введенное число x={x} палиндром");
+//      else 
+//      Console.WriteLine($"Введенное число x={x} не палиндром");
+// }
+// else 
+//  Console.WriteLine($"Число x={x} не пятизначное, введите корректное");
 
 
 
@@ -33,6 +30,27 @@ else
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
+
+Console.Clear();
+Console.Write("Введите координаты точки A: x=");
+int ax = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты точки A: y=");
+int ay = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты точки A: z=");
+int az = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты точки B: x=");
+int bx = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты точки B: y=");
+int by = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты точки B: z=");
+int bz = Convert.ToInt32(Console.ReadLine());
+
+double otrezok = Math.Round (Math.Sqrt(((bx-ax)*(bx-ax))+((by-ay)*(by-ay))+((bz-az)*(bz-az))));
+
+Console.WriteLine($"Расстояние между точками равно: {otrezok}");
+
+
+
 
 // Задача 23
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
